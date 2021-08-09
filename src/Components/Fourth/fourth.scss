@@ -1,0 +1,53 @@
+@import "../../global.scss";
+.Fourth {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  border-bottom: 10px solid rgb(58, 58, 58);
+  display: flex;
+
+  .container {
+    align-items: center;
+    display: flex;
+    .left {
+      flex: 0.5;
+      img {
+        width: 450px;
+        margin-right: 10px;
+        @include tablet {
+          width: 380px;
+          margin-bottom: 25px;
+        }
+
+        @include mobilem {
+          width: 340px;
+        }
+      }
+    }
+    .right {
+      flex: 0.5;
+
+      h1 {
+        font-size: 50px;
+        font-weight: 500;
+        @include tablet {
+          margin-top: 45px;
+          font-size: 30px;
+          font-weight: 800;
+        }
+      }
+      h2 {
+        padding-top: 15px;
+        font-size: 28px;
+        @include tablet {
+          font-size: 19px;
+          padding-top: 0;
+        }
+      }
+    }
+    @include tablet {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,206 @@
+@import "../../global.scss";
+.Topbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  height: 750px;
+  position: relative;
+
+  img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 750px;
+    border-bottom: 10px solid rgb(34, 34, 34);
+    @include mobiles {
+      height: 550px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    position: absolute;
+    color: white;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+    }
+    .left {
+      display: flex;
+      flex: 0.5;
+      margin-left: 50px;
+      margin-top: 20px;
+
+      img {
+        border-bottom: none;
+        object-fit: scale-down;
+        width: 180px;
+        @include tablet {
+          width: 100px;
+        }
+        @include mobiles {
+          width: 100px;
+        }
+      }
+      @include tablet {
+        margin-left: 25px;
+      }
+      @include mobiles {
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+    }
+
+    .right {
+      display: flex;
+      margin-top: 20px;
+      flex: 0.5;
+      margin-right: 50px;
+      justify-content: flex-end;
+      @include tablet {
+        margin-right: 0px;
+      }
+
+      .drop {
+        height: 30px;
+        Button {
+          border: 1px solid white;
+          color: rgb(250, 250, 250);
+          @include tablet {
+            width: 80px;
+            font-size: 10px;
+          }
+          @include mobiles {
+            width: 80px;
+            font-size: 10px;
+          }
+        }
+
+        @include mobiles {
+          width: 120px;
+        }
+      }
+
+      .signin {
+        background-color: rgb(227, 8, 19);
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        Button {
+          background-color: rgb(168, 7, 15);
+          text-align: center;
+          border: none;
+        }
+        @include tablet {
+          height: 30px;
+          width: 69px;
+          font-size: 12px;
+        }
+      }
+      @include tablet {
+        margin-right: 20px;
+      }
+      @include mobiles {
+        margin-right: 15px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding-left: 500px;
+    padding-right: 500px;
+    width: 100%;
+    height: 100%;
+    .bottomcont {
+      h1 {
+        font-size: 70px;
+        font-weight: 800;
+        @include tablet {
+          font-size: 35px;
+          font-weight: 800;
+        }
+        @include mobilel {
+          font-size: 40px;
+          font-weight: 800;
+        }
+        @include mobilem {
+          font-size: 35px;
+          font-weight: 800;
+        }
+        @include mobiles {
+          font-size: 30px;
+          padding-left: 48px;
+          padding-right: 48px;
+          font-weight: 800;
+        }
+      }
+      h3 {
+        font-size: 30px;
+        @include tablet {
+          font-size: 20px;
+        }
+        @include mobilem {
+          margin: 0px 0;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        @include mobilel {
+          margin: 16px 0;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        @include mobiles {
+          font-size: 18px;
+          margin: 16px 0;
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+      h4 {
+        padding: 15px;
+        font-size: 25px;
+        @include tablet {
+          font-size: 22px;
+        }
+        @include mobilel {
+          font-size: 19px;
+          padding: 0 38.25px;
+          font-weight: 500;
+        }
+
+        @include mobiles {
+          margin: 16px 0;
+          font-size: 18px;
+          padding-left: 70px;
+          padding-right: 70px;
+        }
+      }
+    }
+    @include tablet {
+      margin-top: -25px;
+    }
+    @include mobilel {
+      margin-top: 45px;
+    }
+    @include mobilem {
+      margin-top: 45px;
+    }
+    @include mobiles {
+      margin-top: 40px;
+    }
+  }
+  @include mobiles {
+    height: 550px;
+  }
+}

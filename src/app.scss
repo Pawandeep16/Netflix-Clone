@@ -1,0 +1,11 @@
+.App {
+  height: 100vh;
+  overflow-x: hidden;
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 1000px);
+    position: relative;
+    scroll-behavior: smooth;
+  }
+}

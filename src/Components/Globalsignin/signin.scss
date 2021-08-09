@@ -1,0 +1,75 @@
+@import "../../global.scss";
+.inputfield {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .input {
+    background-color: white;
+    font-size: 20px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    width: 550px;
+    height: 70px;
+    text-decoration: none !important;
+    padding-top: 22px;
+    padding-left: 10px;
+
+    label {
+      text-align: center;
+      padding-left: 10px;
+      color: gray;
+      font-weight: 100;
+      @include tablet {
+        padding-left: -5px;
+        padding-top: 5px;
+      }
+      @include mobilel {
+        padding-left: 0px;
+        padding-top: 0px;
+      }
+    }
+    @include tablet {
+      width: 420px;
+      height: 50px;
+      padding-top: 2px;
+    }
+    @include mobilel {
+      width: 400px;
+      padding: 10px 10px 0;
+      padding-top: 0;
+    }
+    @include mobilem {
+      width: 340px;
+    }
+    @include mobiles {
+      width: 300px;
+    }
+  }
+  .gets {
+    background-color: hsl(356, 93%, 46%);
+    border: none;
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    .icon {
+      font-size: 40px;
+      @include tablet {
+        font-size: 20px;
+      }
+    }
+    @include tablet {
+      width: 150px;
+      height: 40px;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,17 @@
+@import "./global.scss";
+.container {
+  .DropDown {
+    .drop {
+      .icon {
+        margin-right: 10px;
+        @include tablet {
+          font-size: 15px;
+          margin-right: 5px;
+        }
+      }
+      Button {
+        width: 120px;
+      }
+    }
+  }
+}

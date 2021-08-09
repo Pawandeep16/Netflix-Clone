@@ -1,0 +1,103 @@
+@import "../../global.scss";
+.last {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  background-color: rgb(0, 0, 0);
+  flex-direction: column;
+
+  color: gray;
+  .header {
+    display: flex;
+    margin-right: 840px;
+
+    h1 {
+      font-size: 20px;
+      @include mobiles {
+      }
+    }
+    a {
+      color: gray;
+      @include mobiles {
+        font-size: 14px;
+      }
+    }
+    @include tablet {
+      margin-right: 50px;
+      font-size: 15px;
+    }
+    @include mobiles {
+      display: block;
+    }
+  }
+  .listitem {
+    display: flex;
+    margin-top: 10px;
+    // flex-wrap: wrap;
+    .col {
+      color: gray;
+      ul {
+        list-style: none;
+
+        li {
+          a {
+            color: gray;
+          }
+        }
+      }
+    }
+    @include mobilel {
+      flex-wrap: wrap;
+    }
+
+    @include mobilem {
+      flex-wrap: wrap;
+    }
+    @include mobiles {
+      flex-wrap: wrap;
+    }
+  }
+  .bottom {
+    margin: 10px 0;
+    margin-right: 970px;
+    .drop {
+      border: 1px solid gray;
+      height: 40px;
+      Button {
+        width: 150px;
+        color: gray;
+      }
+    }
+    @include tablet {
+      margin-right: 0;
+      margin-left: -170px;
+    }
+    @include mobiles {
+      margin-left: 0px;
+      // margin-right: 120px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    margin-right: 1010px;
+    @include tablet {
+      margin-right: 0px;
+      margin-left: -210px;
+    }
+    @include mobiles {
+      font-size: 20px;
+      margin: 10px 0;
+      // margin-right: 160px;
+    }
+  }
+  @include tablet {
+    width: 100%;
+  }
+  @include mobilem {
+    margin-right: 50px;
+  }
+  @include mobiles {
+  }
+}

@@ -1,0 +1,25 @@
+$width: 768px;
+$widthl: 425px;
+$widthm: 375px;
+$widths: 320px;
+
+@mixin tablet {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+@mixin mobilel {
+  @media (max-width: #{$widthl}) {
+    @content;
+  }
+}
+@mixin mobilem {
+  @media (max-width: #{$widthm}) {
+    @content;
+  }
+}
+@mixin mobiles {
+  @media (max-width: #{$widths}) {
+    @content;
+  }
+}

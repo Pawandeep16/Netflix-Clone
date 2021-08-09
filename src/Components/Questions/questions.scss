@@ -1,0 +1,120 @@
+@import "../../global.scss";
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+
+  border-bottom: 10px solid rgb(34, 34, 34);
+  .container {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 50%;
+
+    @include tablet {
+    }
+    h2 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 600;
+
+      @include tablet {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      @include mobilem {
+        font-size: 30px;
+      }
+    }
+    .wrap {
+      margin-top: 20px;
+
+      .ques {
+        display: flex;
+        cursor: pointer;
+        background-color: hsl(0, 0%, 18%);
+        h1 {
+          flex: 0.8;
+          margin-top: 10px;
+          font-size: 40px;
+          margin-left: 10px;
+          @include tablet {
+            font-size: 20px;
+            margin-left: 10px;
+          }
+          @include mobilem {
+            font-size: 14px;
+          }
+          @include mobiles {
+            flex: 0.9;
+
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+        span {
+          flex: 0.2;
+
+          .icon {
+            font-size: 60px;
+            margin-left: 80px;
+            margin-top: 10px;
+
+            @include tablet {
+              margin-top: 5px;
+              font-size: 45px;
+            }
+            @include mobilem {
+              font-size: 25px;
+            }
+            @include mobiles {
+              font-size: 20px;
+            }
+          }
+        }
+        @include tablet {
+          height: 50px;
+          margin-top: 0;
+        }
+        @include mobilem {
+          height: 30px;
+        }
+      }
+      .ans {
+        margin-top: 2px;
+        background-color: hsl(0, 0%, 18%);
+        p {
+          margin-left: 10px;
+          font-size: 30px;
+          @include tablet {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    h3 {
+      position: absolute;
+      margin-top: 45px;
+      font-size: 20px;
+      @include tablet {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+    }
+
+    width: 100%;
+  }
+}
